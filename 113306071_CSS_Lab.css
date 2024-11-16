@@ -1,0 +1,95 @@
+/* 全域樣式重置 */
+body, h1, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* 設定 body 的樣式 */
+body {
+  color: #333; /* 文字顏色 */
+  background-color: #f0f8ff; /* 淺藍背景 */
+  line-height: 2; /* 行距 */
+}
+
+/* 頂部標題 */
+header {
+  background-color: #4682b4; /* 深藍背景 */
+  color: white; /* 白色文字 */
+  text-align: center; /* 置中對齊 */
+  padding: 40px 0; /* 上下內距 */
+}
+
+header h1 {
+  font-size: 4rem;
+}
+
+header p {
+  margin-top: 3px;
+  font-size: 2rem;
+}
+
+/* 導覽列 */
+.navbar {
+  display: flex; /* 橫向排列 */
+  justify-content: center; /* 置中對齊 */
+  list-style: none; /* 移除項目符號 */
+  background-color: #333; /* 深色背景 */
+  padding: 10px 0;
+}
+
+.navbar li {
+  position: relative; /* 為下拉選單定位 */
+  margin: 0 50px;
+}
+
+.navbar a {
+  text-decoration: none; /* 移除底線 */
+  color: white; /* 白色文字 */
+  padding: 10px 20px; /* 內距 */
+
+  font-size: 20px;
+  display: block; /* 區塊模式 */
+}
+
+.navbar a:hover {
+  background-color: #555; /* 滑鼠懸停時改為淺灰 */
+}
+
+/* 下拉選單 */
+.dropdown-menu {
+  display: none; /* 預設隱藏 */
+  position: absolute;
+  top: 100%; /* 導覽列下方 */
+  left: 0;
+  background-color: #333; /* 深色背景 */
+  list-style: none;
+  padding: 0; /* 移除外層內距 */
+  width: auto; /* 自動調整寬度 */
+  font-size: 10px; /* 字體大小 */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* 增加陰影效果 */
+}
+
+.dropdown-menu li {
+  padding: 10px 0;
+  font-size: 10px;
+}
+
+.dropdown-menu li a:hover {
+  background-color: #555; /* 滑鼠懸停 */
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block; /* 滑鼠懸停顯示下拉選單 */
+}
+
+/* 主內容 */
+main {
+  text-align: center; /* 置中對齊 */
+  padding: 20px;
+}
+
+main a {
+  color: #0056b3; /* 藍色超連結 */
+  text-decoration: underline;
+}
